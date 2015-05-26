@@ -157,21 +157,21 @@ Func readConfig() ;Reads config and sets it to the variables
 
 		$ichkDonateBarbarians = IniRead($config, "donate", "chkDonateBarbarians", "0")
 		$ichkDonateAllBarbarians = IniRead($config, "donate", "chkDonateAllBarbarians", "0")
-		$sTxtDonateBarbarians = StringReplace(IniRead($config, "donate", "txtDonateBarbarians", "barbarians|barb|any"), "|", @CRLF)
+		$sTxtDonateBarbarians = StringReplace(IniRead($config, "donate", "txtDonateBarbarians", "barbarians|barb"), "|", @CRLF)
 		$sTxtBlacklistBarbarians = StringReplace(IniRead($config, "donate", "txtBlacklistBarbarians", "no barbarians|no barb|barbarians no|barb no"), "|", @CRLF)
 		$aDonBarbarians = StringSplit($sTxtDonateBarbarians, @CRLF, $STR_ENTIRESPLIT)
 		$aBlkBarbarians = StringSplit($sTxtBlackListBarbarians, @CRLF, $STR_ENTIRESPLIT)
 
 		$ichkDonateArchers = IniRead($config, "donate", "chkDonateArchers", "0")
 		$ichkDonateAllArchers = IniRead($config, "donate", "chkDonateAllArchers", "0")
-		$sTxtDonateArchers = StringReplace(IniRead($config, "donate", "txtDonateArchers", "archers|arch|any"), "|", @CRLF)
+		$sTxtDonateArchers = StringReplace(IniRead($config, "donate", "txtDonateArchers", "archers|arch"), "|", @CRLF)
 		$sTxtBlacklistArchers = StringReplace(IniRead($config, "donate", "txtBlacklistArchers", "no archers|no arch|archers no|arch no"), "|", @CRLF)
 		$aDonArchers = StringSplit($sTxtDonateArchers, @CRLF, $STR_ENTIRESPLIT)
 		$aBlkArchers = StringSplit($sTxtBlackListArchers, @CRLF, $STR_ENTIRESPLIT)
 
 		$ichkDonateGiants = IniRead($config, "donate", "chkDonateGiants", "0")
 		$ichkDonateAllGiants = IniRead($config, "donate", "chkDonateAllGiants", "0")
-		$sTxtDonateGiants = StringReplace(IniRead($config, "donate", "txtDonateGiants", "giants|giant|any"), "|", @CRLF)
+		$sTxtDonateGiants = StringReplace(IniRead($config, "donate", "txtDonateGiants", "giants|giant"), "|", @CRLF)
 		$sTxtBlacklistGiants = StringReplace(IniRead($config, "donate", "txtBlacklistGiants", "no giants|giants no"), "|", @CRLF)
 		$aDonGiants = StringSplit($sTxtDonateGiants, @CRLF, $STR_ENTIRESPLIT)
 		$aBlkGiants = StringSplit($sTxtBlackListGiants, @CRLF, $STR_ENTIRESPLIT)
@@ -270,7 +270,7 @@ Func readConfig() ;Reads config and sets it to the variables
 		;;; Custom Combination Donate by ChiefM3
 		$ichkDonateCustom = IniRead($config, "donate", "chkDonateCustom", "0")
 		$ichkDonateAllCustom = IniRead($config, "donate", "chkDonateAllCustom", "0")
-		$sTxtDonateCustom = StringReplace(IniRead($config, "donate", "txtDonateCustom", "any|need"), "|", @CRLF)
+		$sTxtDonateCustom = StringReplace(IniRead($config, "donate", "txtDonateCustom", "any|need|reinforcements"), "|", @CRLF)
 		$sTxtBlacklistCustom = StringReplace(IniRead($config, "donate", "txtBlacklistCustom", "no|cw|war"), "|", @CRLF)
 		$aDonCustom = StringSplit($sTxtDonateCustom, @CRLF, $STR_ENTIRESPLIT)
 		$aBlkCustom = StringSplit($sTxtBlacklistCustom, @CRLF, $STR_ENTIRESPLIT)
@@ -281,7 +281,7 @@ Func readConfig() ;Reads config and sets it to the variables
 		$icmbDonateCustom3 = IniRead($config, "donate", "cmbDonateCustom3", "0")
 		$itxtDonateCustom3 = IniRead($config, "donate", "txtDonateCustom3", "0")
 
-		$sTxtBlacklist = StringReplace(IniRead($config, "donate", "txtBlacklist", "clan war|war|cw"), "|", @CRLF)
+		$sTxtBlacklist = StringReplace(IniRead($config, "donate", "txtBlacklist", "clan war|war|cw|lvl|only|plus|up|+"), "|", @CRLF)
 		$aBlackList = StringSplit($sTxtBlackList, @CRLF, $STR_ENTIRESPLIT)
 
 		;Troop Settings--------------------------------------------------------------------------

@@ -911,7 +911,7 @@ $y += 75
 			GUICtrlSetState(-1, $GUI_HIDE)
 		$txtDonateGiants = GUICtrlCreateEdit("", $x - 5, $y + 20, 205, 135, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
 			GUICtrlSetState(-1, $GUI_HIDE)
-			GUICtrlSetData(-1, StringFormat("giants\r\ngiant\r\nany\r\nreinforcements"))
+			GUICtrlSetData(-1, StringFormat("giants\r\ngiant"))
 			GUICtrlSetTip(-1, "Keywords for donating Giants")
 		$lblBlacklistGiants = GUICtrlCreateLabel("Do NOT donate to these keywords:", $x + 215, $y + 70, -1, -1)
 			GUICtrlSetState(-1, $GUI_HIDE)
@@ -1304,7 +1304,7 @@ $y += 75
 			GUICtrlSetState(-1, $GUI_HIDE)
 		$txtDonateCustom = GUICtrlCreateEdit("", $x - 5, $y + 20, 205, 135, BitOR($ES_WANTRETURN, $ES_CENTER, $ES_AUTOVSCROLL))
 			GUICtrlSetState(-1, $GUI_HIDE)
-			GUICtrlSetData(-1, StringFormat("any\r\nneed"))
+			GUICtrlSetData(-1, StringFormat("any\r\nneed\r\nreinforcements"))
 			GUICtrlSetTip(-1, "Keywords for donating Custom Troops")
 
 		$lblDonateCustom1 = GUICtrlCreateLabel("Troop1", $x+215, $y+27, -1, -1)
@@ -1351,7 +1351,7 @@ $y += 75
 			GUICtrlSetState(-1, $GUI_HIDE)
 			GUICtrlSetBkColor ( -1, 0x505050)
 			GUICtrlSetColor ( -1, $COLOR_WHITE)
-			GUICtrlSetData(-1, StringFormat("clan war\r\nwar\r\ncw"))
+			GUICtrlSetData(-1, StringFormat("clan war\r\nwar\r\ncw\r\nlvl\r\nonly\r\nplus\r\nup\r\n+"))
 			GUICtrlSetTip(-1, "General Blacklist for donation requests")
 	GUICtrlCreateGroup("", -99, -99, 1, 1)
 
